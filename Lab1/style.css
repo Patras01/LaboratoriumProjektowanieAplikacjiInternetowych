@@ -2,7 +2,8 @@ body {
     counter-reset: section;
 }
   
-.day::before {
+
+.dayNumber::before {
     counter-increment: section;
     content: counter(section);
 }
@@ -12,13 +13,28 @@ body {
     text-align: center;
 }
 
-.row
+.flex
 {
     display: flex;
 }
 
 .day, .textDay
 {
+    width: 100%;
+    border: 1px solid white;
+}
+
+.day
+{
+    height: 25px;
+}
+
+.dayNumber
+{
     border: 1px solid;
-    width: calc(100%/7);
+}
+
+#textDayRow
+{
+    position: fixed;
 }
