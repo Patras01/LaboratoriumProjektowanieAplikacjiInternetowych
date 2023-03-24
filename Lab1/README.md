@@ -1,0 +1,1 @@
+Lab-1, Patryk Podolski, Stacjonarne, 029404.

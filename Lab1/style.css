@@ -1,9 +1,69 @@
 body {
     counter-reset: section;
 }
-  
 
-.dayNumber::before {
+.grid .textDay:nth-child(1):before {
+    content: "PN";
+}
+
+.grid .textDay:nth-child(2):before {
+    content: "WT";
+}
+
+.grid .textDay:nth-child(3):before {
+    content: "SR";
+}
+
+.grid .textDay:nth-child(4):before {
+    content: "CZ";
+}
+
+.grid .textDay:nth-child(5):before {
+    content: "PT";
+}
+
+.grid .textDay:nth-child(6):before {
+    content: "SB";
+}
+
+.grid .textDay:nth-child(7):before {
+    content: "ND";
+}
+
+.flex .dayNumber:nth-child(1):before {
+    content: "PN\A";
+}
+
+.flex .dayNumber:nth-child(2):before {
+    content: "WT\A";
+}
+
+.flex .dayNumber:nth-child(3):before {
+    content: "SR\A";
+}
+
+.flex .dayNumber:nth-child(4):before {
+    content: "CZ\A";
+}
+
+.flex .dayNumber:nth-child(5):before {
+    content: "PT\A";
+}
+
+.flex .dayNumber:nth-child(6):before {
+    content: "SB\A";
+}
+
+.flex .dayNumber:nth-child(7):before {
+    content: "ND\A";
+}
+
+.flex > .textDay, .flex > .empty
+{
+    display: none;
+}
+
+.dayNumber::after {
     counter-increment: section;
     content: counter(section);
 }
@@ -13,7 +73,7 @@ body {
     text-align: center;
 }
 
-.flex
+.grid
 {
     display: flex;
 }
@@ -34,7 +94,4 @@ body {
     border: 1px solid;
 }
 
-#textDayRow
-{
-    position: fixed;
-}
+
