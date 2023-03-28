@@ -1,7 +1,7 @@
 var changeViewButton = document.getElementById("buttonFlex");
 
 changeViewButton.addEventListener('click', function() {
-    var rows = document.querySelectorAll("div.row");
+    var rows = document.querySelectorAll("div.table");
     rows.forEach(element => {
         if (element.classList.contains("grid")) {
             element.classList.remove("grid");
