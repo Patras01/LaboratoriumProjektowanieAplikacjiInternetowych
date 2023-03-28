@@ -63,7 +63,7 @@ body {
     display: none;
 }
 
-.dayNumber::after {
+.dayNumber {
     counter-increment: section;
     content: counter(section);
 }
